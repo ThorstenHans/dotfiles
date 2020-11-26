@@ -1,0 +1,25 @@
+private
+
+# Git credential file
+.gitconfig.local
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+*~
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# npm & bower
+node_modules
+npm-debug.log
+
+# IDEs stuff
+.idea
+.vs

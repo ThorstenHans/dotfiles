@@ -1,0 +1,27 @@
+[user]
+	name = Thorsten Hans
+	email = thorsten.hans@gmail.com
+	signingkey = 65F0CB1B39D6BB75
+[alias]
+	br = branch
+	s = status
+	l = log --oneline
+	co = checkout
+[core]
+	editor = code --wait
+	autocrlf = false
+[push]
+	default = current
+[commit]
+    gpgSign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gitflow "prefix"]
+    feature = feature-
+    release = release-
+    hotfix = hotfix-
+    support = support-
+    versiontag = v
