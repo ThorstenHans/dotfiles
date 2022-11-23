@@ -15,6 +15,7 @@ alias ll="exa -l --git --icons"
 alias la=ll
 alias ls=ll
 alias lt="exa -l --git --icons --tree"
+alias tree=lt
 
 # 3 - docker
 # quick access to docker cli

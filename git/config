@@ -1,7 +1,7 @@
 [user]
 	name = Thorsten Hans
 	email = thorsten.hans@gmail.com
-	signingkey = 65F0CB1B39D6BB75
+	signingkey = A741BD0C2875BBCF
 [alias]
 	br = branch
 	s = status

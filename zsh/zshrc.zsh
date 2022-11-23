@@ -8,6 +8,7 @@ fi
 # source antigen
 config_dir=$HOME/dotfiles/zsh
 source ${config_dir}/antigen.zsh
+export ZSH_CACHE_DIR=$HOME/.oh-my-zsh/cache
 
 # laod oh-my-zsh
 antigen use oh-my-zsh
