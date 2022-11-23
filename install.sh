@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Exit immediately if a command exits with a non-zero status.
+set -e
 # capture working directory
 working_dir=$(pwd)
 dependencies=(curl zsh git)

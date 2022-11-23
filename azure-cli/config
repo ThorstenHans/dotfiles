@@ -3,9 +3,10 @@ name = AzureCloud
 
 [core]
 first_run = yes
-output = table
+output = jsonc
 collect_telemetry = yes
 cache_ttl = 10
 
 [logging]
 enable_log_file = no
+

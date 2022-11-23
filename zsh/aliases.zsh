@@ -1,16 +1,3 @@
-# aliases
-
-# ----------------------------------
-# 1 - edit and reload
-# 2 - navigation
-# 3 - docker
-# 4 - kubectl
-# 5 - git
-# 6 - terraform
-# 7 - VSCode
-# ----------------------------------
-
-# 1 - edit and reload
 # edit hosts with default editor
 alias hosts='sudo $EDITOR /etc/hosts'
 # edit dotfiles
@@ -22,13 +9,20 @@ alias sc="source $HOME/.zshrc"
 # 2 - navigation
 alias dev="cd $HOME/dev"
 alias customers="cd $HOME/dev/thinktecture/customers"
-
+alias thns="cd $HOME/dev/thorstenhans/"
+alias blog="cd $HOME/dev/thorstenhans/blog && code ."
+alias ll="exa -l --git --icons"
+alias la=ll
+alias ls=ll
+alias lt="exa -l --git --icons --tree"
 
 # 3 - docker
 # quick access to docker cli
 alias d='docker'
 # quick access to docker-compose cli
 alias dc='docker-compose'
+alias dcup='docker-compose up'
+alias dcdown='docker-compose down'
 # list all images
 alias dim='docker images'
 # quickly list all containres
@@ -62,12 +56,18 @@ alias got="git"
 alias gti="git" # no volkswagen ;) 
 alias gott="git"
 alias gitt="git"
+alias gir="git"
+alias giy="git"
 
 
 # 6 - terraform
 # quick access to terraform
-alias t="tf"
-
+alias t="terraform"
+alias tfmt="terraform fmt --recursive"
+alias tvalidate="terraform validate"
+alias tplan="terraform plan"
+alias tapply="terraform apply"
+alias tdestroy="terraform destroy"
 
 # 7 - VSCode
 alias ccode="code ."
