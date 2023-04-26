@@ -14,7 +14,7 @@
 [push]
 	default = current
 [commit]
-    gpgSign = true
+	gpgsign = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -32,3 +32,5 @@
 	defaultBranch = main
 [diff "sopsdiffer"]
 	textconv = sops -d
+[gpg "x509"]
+	program = gpg
