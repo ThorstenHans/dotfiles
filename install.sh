@@ -60,11 +60,11 @@ verify_mac_dependencies(){
 
 # verifies that dependencies are installed on Linux
 verify_linux_dependencies(){
-    apt update -q > /dev/null
+    sudo apt update -q > /dev/null
     for lib in "${dependencies[@]}"
     do
         info "Installing $lib if not present"
-        apt install $lib -q --yes > /dev/null
+        sudo apt install $lib -q --yes > /dev/null
         success "$lib is installed"
     done
 }
@@ -114,10 +114,6 @@ for f in "${files[@]}"
 do
 	backup_file $f
 done
-
-info "Installing nightly Antigen build"
-curl -s -L git.io/antigen-nightly > ${working_dir}/zsh/antigen.zsh
-success "Nightly Antigen build installed"
 
 info "Linking dotfiles"
 
