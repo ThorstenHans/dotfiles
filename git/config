@@ -1,0 +1,38 @@
+[user]
+	name = Thorsten Hans
+	email = thorsten.hans@fermyon.com
+	signingkey = 892E4D439867770F 
+[alias]
+	br = branch
+	s = status
+	l = log --oneline
+	co = checkout
+    open = "!gh browse"
+[core]
+	editor = code --wait
+	autocrlf = false
+[push]
+	default = current
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gitflow "prefix"]
+    feature = feature-
+    release = release-
+    hotfix = hotfix-
+    support = support-
+    versiontag = v
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[diff "sopsdiffer"]
+	textconv = sops -d
+[gpg "x509"]
+	program = gpg
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/

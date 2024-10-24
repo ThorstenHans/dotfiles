@@ -1,0 +1,36 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[kubernetes]
+disabled = true
+
+[azure]
+disabled = true
+format = '[$symbol($subscription)]($style)'
+symbol = '󰠅 '
+style = 'blue bold'
+
+[azure.subscription_aliases]
+very-long-subscription-name = 'vlsn'
+sub-azure-sponsorship = "az-sponsor"
+sub-mvp-personal = "mvp"
+
+[directory]
+truncate_to_repo = true
+repo_root_style = 'purple'
+
+[git_branch]
+format = "[$symbol$branch(:$remote_branch)]($style) "
+
+[golang]
+version_format = "${raw}"
+
+[rust]
+version_format = "${raw}"
+
+[nodejs]
+version_format = "${raw}"
+
+[spin]
+disabled = false
+permanent = true

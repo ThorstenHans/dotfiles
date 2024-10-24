@@ -1,0 +1,64 @@
+live_config_reload = true
+import = ["~/.config/alacritty/themes/catppuccin-frappe.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[scrolling]
+history = 100_000
+multiplier = 3
+
+[shell]
+program = "zsh"
+args = ["-l", "-c", "tmux attach || tmux"]
+
+[selection]
+save_to_clipboard = true
+
+[mouse]
+hide_when_typing = true
+
+[cursor]
+blink_interval = 450
+blink_timeout = 3
+
+[cursor.style]
+shape = "Beam"
+blinking = "Always"
+
+[window]
+decorations = "Buttonless"
+opacity = 0.8
+blur = true
+startup_mode = "Maximized"
+dynamic_padding = false
+
+[window.dimensions]
+columns = 130
+lines = 40
+
+[window.padding]
+x = 3
+y = 3
+
+[font]
+size = 16
+builtin_box_drawing = false
+[font.normal]
+family = "JetBrains Mono"
+style = "Regular"
+[font.bold]
+family = "JetBrains Mono"
+style = "Regular"
+[font.italic]
+family = "JetBrains Mono"
+style = "Italic"
+[keyboard]
+bindings = [
+  { key = "T", mods = "Command", chars = "\u0002c" },
+  { key = "W", mods = "Command", chars = "\u0002&" },
+  { key = "Tab", mods = "Control", chars = "\u0002n" },
+  { key = "Tab", mods = "Control|Shift", chars = "\u0002p" },
+  { key = "[", mods = "Command", chars = "\u0002p" },
+  { key = "]", mods = "Command", chars = "\u0002n" },
+]

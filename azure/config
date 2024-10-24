@@ -1,0 +1,15 @@
+[cloud]
+name = AzureCloud
+
+[core]
+output = table
+collect_telemetry = no
+cache_ttl = 10
+first_run = yes
+
+[logging]
+enable_log_file = no
+
+[extension]
+use_dynamic_install = yes_without_prompt
+
