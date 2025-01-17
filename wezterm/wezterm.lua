@@ -6,8 +6,8 @@ local action = wezterm.action
 local config = {}
 
 -- Fonts
-config.font = wezterm.font("JetBrains Mono")
-config.font_size = 16
+config.font = wezterm.font("JetBrains Mono ExtraLight")
+config.font_size = 15
 
 -- Command Palette
 config.command_palette_bg_color = "#232634"
@@ -21,9 +21,10 @@ config.cursor_blink_ease_in = "Linear"
 config.default_cursor_style = "BlinkingBar"
 
 -- Appearance & Colors
+-- config.color_scheme = "catppuccin-latte"
 config.color_scheme = "catppuccin-frappe"
 config.macos_window_background_blur = 1
-config.enable_tab_bar = true
+config.enable_tab_bar = false
 config.use_fancy_tab_bar = true
 config.inactive_pane_hsb = {
 	saturation = 0.5,
@@ -71,7 +72,7 @@ config.window_decorations = "RESIZE"
 -- Default Dimensions
 config.initial_rows = 40
 config.initial_cols = 130
-config.window_background_opacity = 0.97
+config.window_background_opacity = 0.99
 
 -- wezterm events
 wezterm.on("gui-startup", function(cmd)
@@ -81,6 +82,7 @@ end)
 
 -- Misc
 config.window_close_confirmation = "NeverPrompt"
+config.max_fps = 120
 
 -- Key Bindings
 config.keys = {
