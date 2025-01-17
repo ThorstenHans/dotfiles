@@ -4,6 +4,9 @@
 [kubernetes]
 disabled = true
 
+[aws]
+disabled = true
+
 [azure]
 disabled = true
 format = '[$symbol($subscription)]($style)'
