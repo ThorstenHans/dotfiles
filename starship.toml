@@ -1,10 +1,104 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+format = """
+$jobs\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$character\
+"""
+
+right_format = """
+$spin\
+$kubernetes\
+$vcsh\
+$fossil_branch\
+$fossil_metrics\
+$hg_branch\
+$pijul_channel\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$gleam\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$python\
+$quarto\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$solidity\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$conda\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$gcloud\
+$openstack\
+$azure\
+$nats\
+$direnv\
+$env_var\
+$crystal\
+$custom\
+$sudo\
+$line_break\
+$battery\
+$time\
+$status\
+$os\
+$container\
+$shell\
+"""
+
 [kubernetes]
 disabled = true
 
 [aws]
+disabled = true
+
+[gcloud]
 disabled = true
 
 [azure]
@@ -21,6 +115,7 @@ sub-mvp-personal = "mvp"
 [directory]
 truncate_to_repo = true
 repo_root_style = 'purple'
+truncation_length = 1
 
 [git_branch]
 format = "[$symbol$branch(:$remote_branch)]($style) "
@@ -34,6 +129,9 @@ version_format = "${raw}"
 [nodejs]
 version_format = "${raw}"
 
+[package]
+disabled = true
+
 [spin]
 disabled = false
-permanent = true
+permanent = false
