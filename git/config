@@ -9,7 +9,7 @@
 	co = checkout
     open = "!gh browse"
 [core]
-	editor = code --wait
+	editor = "nvim -f"
 	autocrlf = false
 [push]
 	default = current
