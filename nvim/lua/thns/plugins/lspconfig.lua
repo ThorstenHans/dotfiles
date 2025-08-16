@@ -4,13 +4,13 @@ return {
     opts = {
       ensure_installed = {
         "dockerfile-language-server",
-        "gopls",
         "golangci-lint-langserver",
-        "yaml-language-server",
-        "terraform-ls",
+        "gopls",
         "rust-analyzer",
         "stylua",
         "taplo",
+        "terraform-ls",
+        "yaml-language-server",
       },
     },
   },
@@ -21,7 +21,22 @@ return {
       codelens = {
         enabled = true,
       },
-      servers = {},
+      servers = {
+        lua_ls = {
+          runtime = {
+            version = "LuaJIT",
+            path = vim.split(package.path, ";"),
+          },
+          diagnostics = {
+            globals = { "vim" },
+          },
+          workspace = {
+            -- Make the server aware of Neovim runtime files
+            library = vim.api.nvim_get_runtime_file("", true),
+            checkThirdParty = false, -- Avoids unwanted warnings about third-party modules
+          },
+        },
+      },
     },
   },
 }

@@ -4,7 +4,6 @@ return {
   config = function()
     local ll = require("lualine")
     local lazy_status = require("lazy.status")
-
     ll.setup({
       sections = {
         lualine_a = {
@@ -14,6 +13,11 @@ return {
           { "branch" },
         },
         lualine_x = {
+          {
+            require("noice").api.statusline.mode.get,
+            cond = require("noice").api.statusline.mode.has,
+            color = { fg = "#ff9e64" },
+          },
           {
             lazy_status.updates,
             cond = lazy_status.has_updates,
