@@ -1,14 +1,9 @@
-
 [env]
 TERM = "xterm-256color"
 
 [scrolling]
 history = 100_000
 multiplier = 3
-
-[terminal.shell]
-program = "zsh"
-args = ["-l", "-c", "tmux attach || tmux"]
 
 [selection]
 save_to_clipboard = true
@@ -30,6 +25,7 @@ opacity = 0.8
 blur = true
 startup_mode = "Windowed"
 dynamic_padding = false
+option_as_alt = "Both"
 
 [window.dimensions]
 columns = 130
@@ -40,17 +36,18 @@ x = 3
 y = 3
 
 [font]
-size = 16
+size = 20
 builtin_box_drawing = false
 [font.normal]
-family = "JetBrains Mono"
+family = "DankMono Nerd Font"
 style = "Regular"
 [font.bold]
-family = "JetBrains Mono"
+family = "DankMono Nerd Font"
 style = "Regular"
 [font.italic]
-family = "JetBrains Mono"
+family = "DankMono Nerd Font"
 style = "Italic"
+
 [keyboard]
 bindings = [
   { key = "T", mods = "Command", chars = "\u0002c" },
@@ -64,5 +61,3 @@ bindings = [
 [general]
 live_config_reload = true
 import = ["~/.config/alacritty/themes/catppuccin-frappe.toml"]
-
-[terminal]
