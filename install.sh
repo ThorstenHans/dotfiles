@@ -12,6 +12,8 @@ check_for_binary() {
 echo "# Checking if necessary applications are installed"
 check_for_binary stow
 check_for_binary zsh
+check_for_binary fzf
+check_for_binary zoxide
 check_for_binary starship
 echo " Necessary binaries are installed"
 
