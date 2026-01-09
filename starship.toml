@@ -131,7 +131,3 @@ version_format = "${raw}"
 
 [package]
 disabled = true
-
-[spin]
-disabled = false
-permanent = false
