@@ -1,0 +1,9 @@
+font-family = "Monaspace Krypton Light"
+font-size = 20
+
+theme = "Catppuccin Frappe"
+window-height = 40
+window-width = 160
+
+
+copy-on-select = true
