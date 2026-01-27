@@ -16,7 +16,7 @@ export PATH=$HOME/.dotnet/tools:$PATH
 # Misc
 export PATH=/opt/homebrew/opt/llvm/bin:$PATH
 export PATH=$HOME/.krew/bin:$PATH
-
+export PATH=/opt/homebrew/opt/libpq/bin:$PATH
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/thorsten/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/thorsten/Downloads/google-cloud-sdk/path.zsh.inc'; fi
