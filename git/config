@@ -1,7 +1,7 @@
 [user]
 	name = Thorsten Hans
 	email = thorsten.hans@fermyon.com
-	signingkey = 892E4D439867770F 
+	signingkey = 7C7E564CC7515D09
 [alias]
 	br = branch
 	s = status
@@ -36,3 +36,5 @@
 	program = gpg
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+[tag]
+	gpgSign = true
