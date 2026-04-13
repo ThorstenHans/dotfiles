@@ -7,6 +7,8 @@ brew "bat"
 brew "docker"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Audit git repos for secrets
+brew "gitleaks"
 # GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
@@ -17,6 +19,8 @@ brew "jq"
 brew "neovim"
 # HTTP load generator, inspired by rakyll/hey with tui animation
 brew "oha"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
