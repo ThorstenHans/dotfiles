@@ -1,4 +1,21 @@
 # Thorsten's dotfiles
 
-These are my `dotfiles`. I use GNU stow to manage them (see [./install.sh](./install.sh)).
+My personal development environment configurations for macOS. Managed with `stoq` and organized for quick bootstrapping on new machines.
 
+## 🚀 Quick Start
+
+### 1. Clone the repo
+
+```bash
+git clone [https://github.com/ThorstenHans/dotfiles.git](https://github.com/ThorstenHans/dotfiles.git) ~/dotfiles
+cd ~/dotfiles
+```
+
+## Installation
+
+Run `install.sh` to link all the `dotfiles`. 
+
+
+## Install Software
+
+Once `install.sh` has finished, run `install-software.sh`
