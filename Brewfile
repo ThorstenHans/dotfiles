@@ -1,22 +1,33 @@
 tap "akamai-developers/tap"
 tap "nikitabobko/tap"
 tap "spinframework/tap"
+tap "tinygo-org/tools"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
+# Modern, maintained replacement for ls
+brew "eza"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GitHub command-line tool
+brew "gh"
 # Audit git repos for secrets
 brew "gitleaks"
 # GNU Privacy Guard (OpenPGP)
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Kubernetes package manager
+brew "helm"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
 # HTTP load generator, inspired by rakyll/hey with tui animation
 brew "oha"
 # Pinentry for GPG on Mac
@@ -33,6 +44,8 @@ brew "zsh"
 brew "spinframework/tap/spin"
 # A MCP Server for Akamai Functions
 brew "akamai-developers/tap/akamai-functions-mcp"
+# TinyGo is a Go compiler for small places. Microcontrollers, WebAssembly, and command-line tools. Based on LLVM.
+brew "tinygo-org/tools/tinygo"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace"
 # App to build and share containerised applications and microservices
