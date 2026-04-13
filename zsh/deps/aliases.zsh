@@ -1,5 +1,5 @@
-alias ls='ls --color'
-alias la='ls -alh --color'
+alias ls='eza'
+alias la='eza -al'
 
 alias drm='docker rm -f'
 alias dps='docker ps'
@@ -20,3 +20,5 @@ alias got='git'
 alias gti='git' # no volkswagen ;) 
 
 alias cat='bat'
+
+alias reload-config="source ~/.config/zsh/.zshrc"
