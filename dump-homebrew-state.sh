@@ -13,4 +13,4 @@ else
 fi
 
 echo "----------------------------------------------------"
-echo "💡 Next step: git add Brewfile && git commit -m 'Update Brewfile'"
+echo "💡 Next step: git add Brewfile && git commit -sm 'Update Brewfile'"
