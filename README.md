@@ -19,3 +19,13 @@ Run `install.sh` to link all the `dotfiles`.
 ## Install Software
 
 Once `install.sh` has finished, run `install-software.sh`
+
+
+## Upgrading the `Brewfile`
+
+The [`Brewfile`](./Brewfile) contains a list of all software installed via Homebrew (formulas, casks, ...). To update the `Brewfile`, run the following command:
+
+```bash
+brew bundle dump --force --describe
+```
+
