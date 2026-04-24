@@ -29,3 +29,17 @@ The [`Brewfile`](./Brewfile) contains a list of all software installed via Homeb
 brew bundle dump --force --describe
 ```
 
+## Local `pre-commit` hook
+
+To prevent yourself from leaking sensitive data, I highly recommend running `gitleaks` as part of a `pre-commit` hook.
+
+Create `.git/hooks/pre-commit` and ensure it is executable
+
+```bash
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+gitleaks git --pre-commit --redact --staged --verbose
+```
+
