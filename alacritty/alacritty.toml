@@ -39,13 +39,13 @@ y = 3
 size = 20
 builtin_box_drawing = false
 [font.normal]
-family = "DankMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
 [font.bold]
-family = "DankMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Regular"
 [font.italic]
-family = "DankMono Nerd Font"
+family = "JetBrainsMono Nerd Font"
 style = "Italic"
 
 [keyboard]

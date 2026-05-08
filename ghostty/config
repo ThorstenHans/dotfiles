@@ -1,7 +1,8 @@
-font-family = "JetBrains Mono"
-font-size = 20
+font-family = "JetBrainsMono Nerd Font"
+font-size = 18
+font-style = Regular
 
-theme = "TokyoNight"
+theme = "TokyoNight Storm"
 window-height = 40
 window-width = 160
 

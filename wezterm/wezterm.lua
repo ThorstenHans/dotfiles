@@ -7,7 +7,7 @@ local config = {}
 
 -- Fonts
 config.font = wezterm.font({
-	family = "DankMono Nerd Font",
+	family = "JetBrainsMono Nerd Font",
 	weight = "Regular",
 })
 config.font_size = 22
@@ -34,7 +34,7 @@ config.inactive_pane_hsb = {
 	brightness = 0.6,
 }
 config.window_frame = {
-	font = wezterm.font({ family = "DankMono NerdFont", weight = "Regular" }),
+	font = wezterm.font({ family = "JetBrainsMono Nerd Font", weight = "Regular" }),
 	font_size = 14,
 	active_titlebar_bg = "#303446",
 	inactive_titlebar_bg = "#303446",
