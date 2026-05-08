@@ -1,4 +1,5 @@
 tap "akamai-developers/tap"
+tap "hashicorp/tap"
 tap "nikitabobko/tap"
 tap "spinframework/tap"
 tap "tinygo-org/tools"
@@ -20,6 +21,10 @@ brew "gnupg"
 brew "go@1.25", link: true
 # Kubernetes package manager
 brew "helm"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.14"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Little helper to run CNCF's k3s in Docker
@@ -34,8 +39,6 @@ brew "node"
 brew "oha"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.14"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Cross-shell prompt for astronauts
@@ -52,12 +55,16 @@ brew "zsh"
 brew "spinframework/tap/spin"
 # A MCP Server for Akamai Functions
 brew "akamai-developers/tap/akamai-functions-mcp"
+# Terraform
+brew "hashicorp/tap/terraform"
 # TinyGo is a Go compiler for small places. Microcontrollers, WebAssembly, and command-line tools. Based on LLVM.
 brew "tinygo-org/tools/tinygo"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace"
+# Open source IDE for exploring and testing APIs
+cask "bruno"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
@@ -65,6 +72,7 @@ cask "docker-desktop"
 # Control your Elgato key lights
 cask "elgato-control-center"
 cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Control your tools with a few keystrokes
@@ -77,6 +85,8 @@ cask "slack"
 cask "visual-studio-code"
 # Multiplayer code editor
 cask "zed"
+vscode "anweber.httpbook"
+vscode "anweber.vscode-httpyac"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
@@ -86,4 +96,6 @@ vscode "ms-toolsai.jupyter-keymap"
 vscode "ms-toolsai.jupyter-renderers"
 vscode "ms-toolsai.vscode-jupyter-cell-tags"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
+cargo "wasm-tools"
+cargo "wasmcp"
 cargo "wizer"
