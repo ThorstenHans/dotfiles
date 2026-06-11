@@ -32,3 +32,9 @@ fi
 
 echo "# Linking dotfiles to $XDG_CONFIG_HOME"
 stow --ignore \zsh-init --ignore \npm -t $XDG_CONFIG_HOME .
+
+# Install TPM if not already present
+if [[ ! -d "$HOME/.tmux/plugins/tpm" ]]; then
+  echo "# Installing TPM (tmux plugin manager)"
+  git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
+fi
