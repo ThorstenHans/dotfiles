@@ -9,3 +9,8 @@ window-width = 160
 
 
 copy-on-select = true
+
+keybind = opt+left=unbind
+keybind = opt+right=unbind
+keybind = opt+up=unbind
+keybind = opt+down=unbind
