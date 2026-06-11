@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+cd "$(dirname "$0")"
+
 check_for_binary() {
   if ! command -v $1 &>/dev/null; then
     echo "$1 is not installed"
@@ -17,21 +19,18 @@ check_for_binary zoxide
 check_for_binary starship
 echo " Necessary binaries are installed"
 
-# Link dotfiles
-echo "# Linking dotfiles to $HOME"
-if [[ -f "$HOME/.zshenv" ]]; then
-  rm $HOME/.zshenv
-fi
-stow -t $HOME zsh-init
-stow -t $HOME npm
-
 XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 if [[ ! -d "$XDG_CONFIG_HOME" ]]; then
   mkdir -p "$XDG_CONFIG_HOME"
 fi
 
+# Link dotfiles
+echo "# Linking dotfiles to $HOME"
+stow -R -t "$HOME" zsh-init
+stow -R -t "$HOME" npm
+
 echo "# Linking dotfiles to $XDG_CONFIG_HOME"
-stow --ignore \zsh-init --ignore \npm -t $XDG_CONFIG_HOME .
+stow --ignore 'zsh-init' --ignore 'npm' -R -t "$XDG_CONFIG_HOME" .
 
 # Install TPM if not already present
 if [[ ! -d "$HOME/.tmux/plugins/tpm" ]]; then

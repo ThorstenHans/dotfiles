@@ -1,5 +1,8 @@
 install.sh
+install-software.sh
 devcontainer-install.sh
 README.md
+Brewfile
+dump-homebrew-state.sh
 \.git
 .gitignore

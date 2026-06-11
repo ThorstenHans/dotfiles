@@ -1,24 +1,39 @@
 # Thorsten's dotfiles
 
-My personal development environment configurations for macOS. Managed with `stoq` and organized for quick bootstrapping on new machines.
+My personal development environment configurations for macOS. Managed with `stow` and organized for quick bootstrapping on new machines.
 
 ## 🚀 Quick Start
 
-### 1. Clone the repo
+### 1. Install Xcode Command Line Tools
+
+Required by `git` and Homebrew. Skip if already installed.
 
 ```bash
-git clone [https://github.com/ThorstenHans/dotfiles.git](https://github.com/ThorstenHans/dotfiles.git) ~/dotfiles
+xcode-select --install
+```
+
+### 2. Clone the repo
+
+```bash
+git clone https://github.com/ThorstenHans/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 
-## Installation
+### 3. Install Software
 
-Run `install.sh` to link all the `dotfiles`. 
+Installs Homebrew (if missing) and all packages from the `Brewfile`.
 
+```bash
+./install-software.sh
+```
 
-## Install Software
+### 4. Link dotfiles
 
-Once `install.sh` has finished, run `install-software.sh`
+```bash
+./install.sh
+```
+
+Safe to re-run at any time to ensure everything is correctly linked.
 
 
 ## Upgrading the `Brewfile`

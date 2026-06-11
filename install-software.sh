@@ -1,10 +1,21 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -euo pipefail
 
 # Ensure the script runs from the directory where it is located
 # This allows it to find the 'Brewfile' sitting next to it
 cd "$(dirname "$0")"
 
 echo "----------------------------------------------------"
+
+# Check for Xcode Command Line Tools (required by Homebrew and git)
+if ! xcode-select -p &>/dev/null; then
+  echo "Xcode Command Line Tools not found. Installing..."
+  xcode-select --install
+  echo "Please complete the installation dialog, then re-run this script."
+  exit 1
+fi
+
 echo "🚀  Initializing Homebrew installation..."
 echo "📂  Reading from: $(pwd)/Brewfile"
 echo "----------------------------------------------------"
@@ -25,8 +36,6 @@ fi
 echo "📦 Installing dependencies (this may take a while)..."
 echo "----------------------------------------------------"
 
-# Run the installation
-# --no-lock prevents creating a Brewfile.lock.json file
 if brew bundle; then
   echo "----------------------------------------------------"
   echo "✅ Success! All Brewfile dependencies are installed."
