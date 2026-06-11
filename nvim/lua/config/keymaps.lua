@@ -1,4 +1,5 @@
 local keymap = vim.keymap
+keymap.set("i", "jk", "<ESC>", { desc = "Exit Insert mode" })
 keymap.set("n", "<leader>e",  "<cmd>Neotree focus<CR>",   { desc = "Focus NeoTree" })
 keymap.set("n", "<leader>fk", "<cmd>FzfLua keymaps<cr>", { desc = "Find Keymaps" })
 
