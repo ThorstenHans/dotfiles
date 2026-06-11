@@ -3,6 +3,8 @@ tap "hashicorp/tap"
 tap "nikitabobko/tap"
 tap "spinframework/tap"
 tap "tinygo-org/tools"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Pack, ship and run any application as a lightweight container
@@ -31,6 +33,10 @@ brew "jq"
 brew "k3d"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# CLI for the Linode API
+brew "linode-cli"
+# Open source relational database management system
+brew "mysql-client"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Open-source, cross-platform JavaScript runtime environment
@@ -45,8 +51,14 @@ brew "pipx"
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# Terminal multiplexer
+brew "tmux"
 # Internet file retriever
 brew "wget"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # UNIX shell (command interpreter)
@@ -81,12 +93,15 @@ cask "raycast"
 cask "screenflow"
 # Team communication and collaboration software
 cask "slack"
+# Configurable document editor that supports Markdown
+cask "typora"
 # Open-source code editor
 cask "visual-studio-code"
 # Multiplayer code editor
 cask "zed"
 vscode "anweber.httpbook"
 vscode "anweber.vscode-httpyac"
+vscode "ms-azuretools.vscode-containers"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
@@ -96,6 +111,9 @@ vscode "ms-toolsai.jupyter-keymap"
 vscode "ms-toolsai.jupyter-renderers"
 vscode "ms-toolsai.vscode-jupyter-cell-tags"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
+cargo "cargo-binstall"
+cargo "tomlq"
 cargo "wasm-tools"
 cargo "wasmcp"
 cargo "wizer"
