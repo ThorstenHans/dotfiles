@@ -60,4 +60,4 @@ bindings = [
 
 [general]
 live_config_reload = true
-import = ["~/.config/alacritty/themes/catppuccin-frappe.toml"]
+import = ["~/.config/alacritty/themes/tokyo-night-storm.toml"]

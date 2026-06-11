@@ -13,8 +13,8 @@ config.font = wezterm.font({
 config.font_size = 22
 
 -- Command Palette
-config.command_palette_bg_color = "#232634"
-config.command_palette_fg_color = "#babbf1"
+config.command_palette_bg_color = "#24283b"
+config.command_palette_fg_color = "#c0caf5"
 config.command_palette_font_size = 20
 config.command_palette_rows = 20
 
@@ -24,8 +24,7 @@ config.cursor_blink_ease_in = "Linear"
 config.default_cursor_style = "BlinkingBar"
 
 -- Appearance & Colors
--- config.color_scheme = "catppuccin-latte"
-config.color_scheme = "catppuccin-frappe"
+config.color_scheme = "Tokyo Night Storm"
 config.macos_window_background_blur = 1
 config.enable_tab_bar = false
 config.use_fancy_tab_bar = true
@@ -36,32 +35,32 @@ config.inactive_pane_hsb = {
 config.window_frame = {
 	font = wezterm.font({ family = "JetBrainsMono Nerd Font", weight = "Regular" }),
 	font_size = 14,
-	active_titlebar_bg = "#303446",
-	inactive_titlebar_bg = "#303446",
+	active_titlebar_bg = "#24283b",
+	inactive_titlebar_bg = "#24283b",
 }
 config.colors = {
 	tab_bar = {
 		active_tab = {
-			bg_color = "#303446",
-			fg_color = "#f4b8e4",
+			bg_color = "#24283b",
+			fg_color = "#7aa2f7",
 		},
 		inactive_tab = {
-			bg_color = "#303446",
-			fg_color = "#c6d0f5",
+			bg_color = "#24283b",
+			fg_color = "#c0caf5",
 		},
 		inactive_tab_hover = {
-			bg_color = "#c6d0f5",
-			fg_color = "#303446",
+			bg_color = "#c0caf5",
+			fg_color = "#24283b",
 		},
 		new_tab = {
-			bg_color = "#babbf1",
-			fg_color = "#303446",
+			bg_color = "#7aa2f7",
+			fg_color = "#24283b",
 		},
 		new_tab_hover = {
-			bg_color = "#303446",
-			fg_color = "#babbf1",
+			bg_color = "#24283b",
+			fg_color = "#7aa2f7",
 		},
-		inactive_tab_edge = "#303446",
+		inactive_tab_edge = "#24283b",
 	},
 }
 config.window_padding = {
