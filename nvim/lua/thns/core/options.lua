@@ -1,13 +1,14 @@
 local opt = vim.opt
 
-opt.relativenumber = false -- enable relative line numberse
-opt.number = false -- show absolute line number for current line
+opt.relativenumber = true
+opt.number = true
 
 -- search
 opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if mixed casing used in search, search is case-sensitive
 
 opt.cursorline = true -- hightlight the current cursor line
+opt.scrolloff = 4
 
 -- line wrapping
 opt.wrap = false
@@ -24,7 +25,7 @@ opt.background = "dark" -- if the colorscheme supports dark-mode use that one by
 opt.signcolumn = "yes" -- show sign column
 
 -- system clipboard
-opt.clipboard:append("unnamedplus") -- use system clipboard as default
+opt.clipboard = vim.env.SSH_CONNECTION and "" or "unnamedplus"
 
 -- configure split behavior
 opt.splitright = true -- vertical splits go to the right

@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
-    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = { colorscheme = "tokyonight-storm" } },
     { import = "thns/plugins" },
   },
   defaults = {
@@ -32,10 +32,9 @@ require("lazy").setup({
         "gzip",
         "tarPlugin",
         "tohtml",
+        "tutor",
         "zipPlugin",
       },
     },
   },
 })
-
-vim.cmd.colorscheme("tokyonight-storm")
