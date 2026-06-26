@@ -1,8 +1,8 @@
-tap "akamai-developers/tap"
-tap "hashicorp/tap"
-tap "nikitabobko/tap"
-tap "spinframework/tap"
-tap "tinygo-org/tools"
+tap "akamai-developers/tap", trusted: true
+tap "hashicorp/tap", trusted: true
+tap "nikitabobko/tap", trusted: true
+tap "spinframework/tap", trusted: true
+tap "tinygo-org/tools", trusted: true
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -23,6 +23,8 @@ brew "gnupg"
 brew "go@1.25", link: true
 # Kubernetes package manager
 brew "helm"
+# Improved top (interactive process viewer)
+brew "htop"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.14"
 # User-friendly cURL replacement (command-line HTTP client)
@@ -63,20 +65,16 @@ brew "zig"
 brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Open-source tool for building and running serverless WebAssembly applications
-brew "spinframework/tap/spin"
-# A MCP Server for Akamai Functions
-brew "akamai-developers/tap/akamai-functions-mcp"
 # Terraform
 brew "hashicorp/tap/terraform"
+# Open-source tool for building and running serverless WebAssembly applications
+brew "spinframework/tap/spin", trusted: true
 # TinyGo is a Go compiler for small places. Microcontrollers, WebAssembly, and command-line tools. Based on LLVM.
 brew "tinygo-org/tools/tinygo"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace"
-# Open source IDE for exploring and testing APIs
-cask "bruno"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices

@@ -1,0 +1,12 @@
+{
+  "trustedformulae": [
+    "spinframework/tap/spin"
+  ],
+  "trustedtaps": [
+    "akamai-developers/tap",
+    "hashicorp/tap",
+    "nikitabobko/tap",
+    "spinframework/tap",
+    "tinygo-org/tools"
+  ]
+}

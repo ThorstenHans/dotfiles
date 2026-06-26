@@ -3,10 +3,13 @@ font-size = 18
 font-style = Regular
 font-thicken = false
 
+background-opacity = 0.95
 theme = "TokyoNight Storm"
 window-height = 40
 window-width = 160
+maximize = true
 
+initial-command = "zsh -c 'tmux new-session -A -s main; exec zsh'"
 
 copy-on-select = true
 

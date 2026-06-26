@@ -5,7 +5,7 @@ echo "🔍  Scanning system for Homebrew packages..."
 echo "----------------------------------------------------"
 
 # Run the bundle dump
-if brew bundle dump --force --describe; then
+if brew bundle dump --force; then
   echo "✅ Success! Your Brewfile has been updated."
 else
   echo "❌ Error: Failed to dump Homebrew dependencies."
