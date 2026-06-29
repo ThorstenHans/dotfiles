@@ -1,4 +1,5 @@
-#!/usr/bin/env bash set -euo pipefail # Ensure the script runs from the directory where it is located This allows it to find the 'Brewfile' sitting next to it cd "$(dirname "$0")"
+#!/usr/bin/env bash
+set -euo pipefail # Ensure the script runs from the directory where it is located This allows it to find the 'Brewfile' sitting next to it cd "$(dirname "$0")"
 
 echo "----------------------------------------------------"
 
