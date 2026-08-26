@@ -5,6 +5,8 @@ return {
     config = function()
       require("bamboo").setup({
         -- optional configuration here
+        transparent = true,
+        term_colors = true,
       })
       require("bamboo").load()
     end,

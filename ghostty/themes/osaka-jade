@@ -1,17 +1,16 @@
-background = #111c18
-foreground = #C1C497
-cursor-color = #D7C995
-cursor-text = #000000
+# Osaka Jade Ghostty Theme
 
-palette = 0=#23372B
+# Basic Colors
+palette = 0=#090f0d
 palette = 1=#FF5345
 palette = 2=#549e6a
 palette = 3=#459451
 palette = 4=#509475
 palette = 5=#D2689C
 palette = 6=#2DD5B7
-palette = 7=#F6F5DD
+palette = 7=#C1C497
 
+# Bright Colors
 palette = 8=#53685B
 palette = 9=#db9f9c
 palette = 10=#63b07a
@@ -19,4 +18,12 @@ palette = 11=#E5C736
 palette = 12=#ACD4CF
 palette = 13=#75bbb3
 palette = 14=#8CD3CB
-palette = 15=#9eebb3
+palette = 15=#F7E8B2
+
+# Core UI Colors
+background = 111c18
+foreground = c1c497
+cursor-color = 509475
+cursor-text = 111c18
+selection-background = 32473b
+selection-foreground = d6d5bc
