@@ -3,7 +3,7 @@
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd -P)"
 
 # Collect valid wallpaper files (.jpg and .png only), sorted alphanumerically
-wallpapers=($(find "$SCRIPT_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" \) | sort))
+wallpapers=($(find "$SCRIPT_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.webp" \) | sort))
 
 # If no wallpapers found, exit
 if [ ${#wallpapers[@]} -eq 0 ]; then
