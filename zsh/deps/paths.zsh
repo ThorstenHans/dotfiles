@@ -13,6 +13,9 @@ export PATH=$HOME/.porter:$PATH
 # .NET global tools
 export PATH=$HOME/.dotnet/tools:$PATH
 
+# Wasmtime
+export PATH=$HOME/.wasmtime/bin:$PATH
+
 # Misc
 export PATH=/opt/homebrew/opt/llvm/bin:$PATH
 export PATH=$HOME/.krew/bin:$PATH

@@ -76,6 +76,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Shell Integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-eval "$(starship init zsh)" 
+eval "$(starship init zsh)"
+eval "$(mise activate zsh)"
 
 export GPG_TTY=$(tty)
