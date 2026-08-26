@@ -1,0 +1,10 @@
+filter_exec: "ghostty"
+matches:
+  - trigger: ":sb"
+    replace: "spin build"
+  - trigger: ":su"
+    replace: "spin up"
+  - trigger: ":sd"
+    replace: "spin aka deploy --no-confirm"
+  - trigger: ":sn"
+    replace: "spin new -t http-rust -a "
