@@ -1,10 +1,10 @@
-font-family = "JetBrainsMono Nerd Font"
-font-size = 18
+font-family = "Monaspace Krypton Light"
+font-size = 20
 font-style = Regular
 font-thicken = false
 
-background-opacity = 0.95
-theme = "TokyoNight Storm"
+background-opacity = 0.98
+theme = "osaka-jade"
 window-height = 40
 window-width = 160
 maximize = true
