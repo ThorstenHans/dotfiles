@@ -3,10 +3,14 @@ tap "hashicorp/tap", trusted: true
 tap "nikitabobko/tap", trusted: true
 tap "spinframework/tap", trusted: true
 tap "tinygo-org/tools", trusted: true
+# Record and share terminal sessions
+brew "asciinema"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
 # Modern, maintained replacement for ls
@@ -17,16 +21,22 @@ brew "fzf"
 brew "gh"
 # Audit git repos for secrets
 brew "gitleaks"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
-brew "go@1.25", link: true
+brew "go"
 # Kubernetes package manager
 brew "helm"
+# Agent multiplexer that lives in your terminal
+brew "herdr"
 # Improved top (interactive process viewer)
 brew "htop"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.14"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Run and Test HTTP Requests with plain text and curl
+brew "hurl"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Little helper to run CNCF's k3s in Docker
@@ -35,24 +45,42 @@ brew "k3d"
 brew "kubernetes-cli"
 # CLI for the Linode API
 brew "linode-cli"
+# Create modern online books from Markdown files
+brew "mdbook"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Open source relational database management system
+brew "mysql-client"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # HTTP load generator, inspired by rakyll/hey with tui animation
 brew "oha"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
+# Cloud native development platform
+brew "pulumi"
+# Persistent key-value database, with built-in net interface
+brew "redis"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Terminal multiplexer
 brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Internet file retriever
 brew "wget"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # UNIX shell (command interpreter)
@@ -63,16 +91,62 @@ brew "hashicorp/tap/terraform"
 brew "spinframework/tap/spin", trusted: true
 # TinyGo is a Go compiler for small places. Microcontrollers, WebAssembly, and command-line tools. Based on LLVM.
 brew "tinygo-org/tools/tinygo"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "nikitabobko/tap/aerospace"
+# Compact TeX distribution as alternative to the full TeX Live / MacTeX
+cask "basictex"
+# Voice and text chat software
+cask "discord"
 # App to build and share containerised applications and microservices
 cask "docker-desktop"
+# Control your Elgato key lights
+cask "elgato-control-center"
+# Cross-platform Text Expander written in Rust
+cask "espanso"
+# Manages environments across the software lifecycle
+cask "flox"
+cask "font-inconsolata"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
+cask "font-monaspace"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# Open-source software for live streaming and screen recording
+cask "obs"
+# Control your tools with a few keystrokes
+cask "raycast"
+# Screen recording and video editing software
+cask "screenflow"
+# Team communication and collaboration software
+cask "slack"
+# Configurable document editor that supports Markdown
+cask "typora"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
 # Multiplayer code editor
 cask "zed"
+vscode "anweber.httpbook"
+vscode "anweber.vscode-httpyac"
+vscode "jovejonovski.ocean-green"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
 cargo "cargo-binstall"
+cargo "drydock"
+cargo "mdbook-pandoc"
+cargo "qrtool"
 cargo "tomlq"
 cargo "wasm-tools"
-cargo "wasmcp"
-cargo "wizer"
+cargo "wasmcp", source: "https://github.com/wasmcp/wasmcp"
