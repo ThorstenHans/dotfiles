@@ -30,7 +30,7 @@ stow -R -t "$HOME" zsh-init
 stow -R -t "$HOME" npm
 
 echo "# Linking dotfiles to $XDG_CONFIG_HOME"
-stow --ignore 'zsh-init' --ignore 'npm' -R -t "$XDG_CONFIG_HOME" .
+stow --ignore 'zsh-init' --ignore 'typora' --ignore 'npm' -R -t "$XDG_CONFIG_HOME" .
 
 # Install TPM if not already present
 if [[ ! -d "$HOME/.tmux/plugins/tpm" ]]; then

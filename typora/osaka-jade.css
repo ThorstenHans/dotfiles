@@ -1,0 +1,101 @@
+/* Base root overrides for Typora */
+:root {
+  --bg-color: #111c18 !important;
+  --side-bar-bg-color: #0c1512 !important;
+  --text-color: #C1C497 !important;
+  
+  --primary-color: #509475 !important;
+  --primary-btn-bg-color: #23372B !important;
+  --primary-btn-text-color: #D6D5BC !important;
+  
+  --active-file-bg-color: #32473B !important;
+  --active-file-text-color: #F7E8B2 !important;
+  
+  --item-hover-bg-color: #23372B !important;
+  --item-hover-text-color: #D6D5BC !important;
+
+  --rawblock-edit-panel-bd: #090f0d !important;
+  --select-text-bg-color: #32473B !important;
+  
+  --code-block-bg-color: #0c1512 !important;
+}
+
+/* Force dark mode across OS color scheme changes */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #111c18 !important;
+    --side-bar-bg-color: #0c1512 !important;
+    --text-color: #C1C497 !important;
+  }
+}
+
+/* Page Background & Text */
+html, 
+body, 
+#write {
+  background-color: #111c18 !important;
+  color: #C1C497 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #D6D5BC !important;
+  font-weight: 600;
+}
+
+h1 { border-bottom: 2px solid #509475 !important; padding-bottom: 0.3em; }
+h2 { border-bottom: 1px solid #23372B !important; padding-bottom: 0.3em; }
+
+/* Links & Text Selection */
+a { color: #2DD5B7 !important; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+::selection {
+  background: #32473B !important;
+  color: #D6D5BC !important;
+}
+
+/* Inline Code */
+code {
+  color: #F7E8B2 !important;
+  background-color: #0c1512 !important;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Code Blocks */
+.md-fences,
+pre.md-fences {
+  background-color: #0c1512 !important;
+  border: 1px solid #23372B !important;
+  border-radius: 6px;
+  color: #C1C497 !important;
+}
+
+/* Code Highlighting Inside Fences */
+.cm-s-inner .cm-keyword { color: #FF5345 !important; }
+.cm-s-inner .cm-string { color: #549e6a !important; }
+.cm-s-inner .cm-number { color: #a2734b !important; }
+.cm-s-inner .cm-variable { color: #D6D5BC !important; }
+.cm-s-inner .cm-comment { color: #53685B !important; font-style: italic; }
+.cm-s-inner .cm-def { color: #2DD5B7 !important; }
+.cm-s-inner .cm-type { color: #459451 !important; }
+
+/* Sidebar & File Tree */
+#typora-sidebar,
+.ty-sidebar-content,
+.file-list-item {
+  background-color: #0c1512 !important;
+  color: #81B8A8 !important;
+}
+
+.file-list-item:hover,
+.outline-item:hover {
+  background-color: #23372B !important;
+}
+
+.file-list-item.active {
+  background-color: #32473B !important;
+  color: #F7E8B2 !important;
+}
